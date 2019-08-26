@@ -6,6 +6,12 @@
 
 require('./bootstrap');
 
+/*Custom.js*/
+require('./main');
+
+/*Vanta.js*/
+require('./vanta');
+
 window.Vue = require('vue');
 
 /**

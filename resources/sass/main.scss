@@ -1,0 +1,123 @@
+/**
+ * Container
+ * - container to be full screen and flexbox enabled
+ */
+body {
+    margin: 0px;
+}
+
+.container-fluid {
+    display: none;
+    height: 100vh;
+}
+
+.bd-highlight {
+    height: inherit;
+}
+
+
+/**
+ * Header & Footer
+ */
+header > p {
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+footer > p {
+    margin-left: 1em;
+}
+
+
+
+/**
+ * Content Elements
+ */
+.icons-feather {
+    padding-right: 2em;
+    max-height: 1.2em;
+}
+
+.content-top {
+    padding-top: 2em;
+}
+
+.logo-link {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.profile-name-surname {
+    li:not(:first-child) {
+        font-size: 5em;
+        color: #B30000 !important;
+        padding: 0em !important;
+    }
+}
+
+.profile-mug {
+    padding: 1em;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+/**
+ * Auxiliary Content elements
+ */
+h1 {
+    font-size: 1.1em !important;
+}
+
+hr {
+    border: 1px solid #F36F18 !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+/**
+ * Page Preload Spinner
+ */
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-top: solid #EDEDED;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
